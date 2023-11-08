@@ -8,8 +8,24 @@
 
     //Entrada
 
+    const usuario = prompt(`Informe o seu nome`).trim();
+
+    
 
     //Processamento
+
+    function mensagem() {
+        if (new Date().getHours() < 12) {
+            return(`Bom dia ${usuario}`)
+        }
+
+        else {
+            return(`Boa Tarde ${usuario}`)
+        }
+    }
+
+    let comprimentar = mensagem()
+    document(comprimentar)
 
 
     //Saída
