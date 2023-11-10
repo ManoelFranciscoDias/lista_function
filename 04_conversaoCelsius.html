@@ -7,10 +7,19 @@
 
     //Entrada
 
+    const Fahrenheit = Number(prompt(`Informe a quantia em Fahrenheit`).trim().replace(",","."))                               
+
 
     //Processamento
 
+    function calculo(Fahrenheit) {
+        return((Fahrenheit - 32) * 5 / 9)
+    }
+
 
     //Saída
+
+    let msg = calculo(Fahrenheit);
+    document.write(`A converção em graus celcius é ${(msg).toFixed(2)}`)
 
 </script>
