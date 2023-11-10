@@ -7,7 +7,7 @@
 
     //Entrada
 
-    const cubo = Number(prompt(`Informe um número cubo`));
+    const cubo = Number(prompt(`Informe um número inteiro`).trim());
 
     //Processamento
 
@@ -19,7 +19,7 @@
     //Saída
 
     let msg = calculo(cubo);
-    alert(`${msg}`);
+    document.write(`Ao cubo é ${msg}`);
     
 
 

@@ -7,10 +7,19 @@
 
     //Entrada
 
+    const grausCelcius = Number(prompt(`Informe a quantidade de graus celcius`).trim().replace(",","."));
 
     //Processamento
 
+    function convercao(grausCelcius) {
+        let Fahrenheit = (9 * grausCelcius + 160) / 5;
+        return(`A conversão de ${grausCelcius} graus Celsius em Fahrenheit é ${Fahrenheit}`)
+    }
+
 
     //Saída
+
+    let mensagem = convercao(grausCelcius)
+    document.write(mensagem)
 
 </script>
