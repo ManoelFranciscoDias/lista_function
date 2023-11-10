@@ -7,10 +7,20 @@
 
     //Entrada
 
+    const cubo = Number(prompt(`Informe um número cubo`));
 
     //Processamento
 
+    function calculo(cubo) {
+        return(Math.pow(cubo, 3));
+    }
+
 
     //Saída
+
+    let msg = calculo(cubo);
+    alert(`${msg}`);
+    
+
 
 </script>
