@@ -8,10 +8,18 @@
 
     //Entrada
 
+    const string = prompt(`Informe uma palavra`).trim().toUpperCase();
+
 
     //Processamento
 
+    function pesquisa(string) {
+        return string.filter(letra => letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U").length
+    }
 
     //Saída
+
+    alert(pesquisa(Array.from(string)))
+
 
 </script>
