@@ -7,10 +7,20 @@
 
     //Entrada
 
+    let peso = Number(prompt(`Informe o seu peso`).trim().replace(",","."));
+    let altura = Number(prompt(`Informe qual é a sua altura`).trim().replace(",","."))
+
 
     //Processamento
 
+    function calculo() {
+        return(peso / (Math.pow(altura, 2)))
+    }
+
 
     //Saída
+
+    let msg = calculo();
+    document.write(`O IMC é ${(msg).toFixed(1)}`)
 
 </script>
