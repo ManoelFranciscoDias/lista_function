@@ -1,4 +1,4 @@
-<script>
+<script utf-8>
     /*
     Problema: Área do Triângulo
     Desenvolva um programa que contenha uma função que calcule a área de um triângulo. A fórmula para o cálculo da área de um triângulo é a seguinte:
@@ -7,10 +7,20 @@
 
     //Entrada
 
+    const base = Number(prompt(`Informe qual a base do triangulo`).trim());
+    const altura = Number(prompt(`Informe a altura do triangulo`).trim())
+
 
     //Processamento
 
+    function calculo() {
+        return((base * altura) / 2)
+    }
+
 
     //Saída
+
+    let msg = calculo();
+    document.write(`A area do triangulo é: ${msg}`)
 
 </script>
