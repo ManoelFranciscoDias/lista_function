@@ -6,10 +6,28 @@
 
     //Entrada
 
+    const numero = Number(prompt(`Informe um numero`).trim().replace(",","."));
+
+
 
     //Processamento
 
+    function calculo() {
+        for(let i = 2; i < numero; i++) {
+            if (numero % i == 0) {
+                return(`Não é primo`)
+            }
+
+            else {
+                return(`É primo`)
+            }
+        }
+    }
+
 
     //Saída
+
+    let msg = calculo()
+    document.write(msg)
 
 </script>
